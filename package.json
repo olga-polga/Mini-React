@@ -1,0 +1,25 @@
+{
+  "name": "mini-react-project",
+  "version": "1.0.0",
+  "description": "blah blah",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --watch-poll"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "olga",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
