@@ -8,7 +8,7 @@ npm, node
 
 ## Installation
 ```
-npm install  - installs all packages required by application
+npm install  //installs all packages required by the application
 ```
 ## Build
 ```
@@ -22,7 +22,7 @@ npm test
 ## Deploy to PCF
 ```
 cf push -p public
-```s
+```
 
 ## License
 
