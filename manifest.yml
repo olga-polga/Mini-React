@@ -1,0 +1,6 @@
+---
+applications:
+  - name: run-run
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    path: .
+    instances: 1

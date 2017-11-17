@@ -1,7 +1,6 @@
 module.exports = [
     {
         test: /\.js$/,
-        //test: path.join(__dirname, '.js'),
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {

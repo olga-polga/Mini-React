@@ -25,7 +25,7 @@ nbdist/
 
 ### React ####
 node_modules/
-src/main/resources/static/built/
+public/built/
 
 ### Concourse ###
 credentials.yml

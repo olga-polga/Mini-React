@@ -14,7 +14,7 @@ loaders.push({
 var config = {
     entry: './src/main/js/index.js',
     output: {
-        path: __dirname,
+        path: __dirname + '/public/',
         filename: './built/bundle.js'
     },
     module: {
@@ -25,7 +25,7 @@ var config = {
             JSON.stringify({serverUrl: "http://localhost:9091"})
     },
     devServer: {
-        contentBase: './src/main/resources/static'
+        contentBase: 'public'
     },
 
 };
