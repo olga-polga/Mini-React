@@ -1,12 +1,9 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { BetterButton } from './components/BetterButton';
+import {BetterButton} from './components/BetterButton';
 import AutosizeInput from 'react-input-autosize';
 
 class App extends React.Component {
-
-
-
 
     render () {
         var idx = 1;
@@ -16,7 +13,7 @@ class App extends React.Component {
             <BetterButton>Click me!</BetterButton>
 
             <p>
-            Be more reactful
+            Be reactful
             </p>
 
             <AutosizeInput
@@ -29,8 +26,6 @@ class App extends React.Component {
 
 
         </div>;
-
-
     }
 }
 

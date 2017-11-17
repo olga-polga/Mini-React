@@ -19,7 +19,7 @@ npm run build
 npm test
 ```
 
-## Deploy to PCF
+## Deploy to PCF  (must build first)
 ```
 cf push -p public
 ```
