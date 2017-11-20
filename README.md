@@ -1,29 +1,36 @@
 ## Synopsis
 
-Minimal React app to deploy to PCF.
+Minimal React js app to deploy to PCF.
 
 ## Prerequisites:
 
-npm, node
+install node, npm locally
 
 ## Installation
 ```
 npm install  //installs all packages required by the application
 ```
+
+## Run locally
+```
+npm run dev
+```
+
 ## Build
 ```
 npm run build
 ```
+
 ## Tests
 ```
 npm test
 ```
 
-## Deploy to PCF  (must build first)
+## Deploy to PCF  (must build first, edit manifest.yml as needed)
 ```
 cf push -p public
 ```
 
 ## License
 
-*yes*
+*ugmmm...*

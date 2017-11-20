@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+const DefinePlugin = require('webpack/lib/DefinePlugin');
 var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'public/js');
@@ -20,13 +21,18 @@ var config = {
     module: {
         loaders: loaders
     },
-    externals: {
-        'Config':
-            JSON.stringify({serverUrl: "http://localhost:9091"})
-    },
     devServer: {
         contentBase: 'public'
     },
+    plugins: [
+        // Makes some environment variables available to the JS code, for example:
+        // if (process.env.NODE_ENV === 'development') { ... }. See `./env.js`.
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV':
+                JSON.stringify(process.env.NODE_ENV || 'development'),
+            'process.env.ROUTER_URL': '"fsdgsdgg"'
+            })
+    ],
 
 };
 

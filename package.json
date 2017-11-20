@@ -1,14 +1,16 @@
 {
   "name": "mini-react-project",
   "version": "1.0.0",
-  "description": "blah blah",
+  "description": "Everything you need to get started",
   "scripts": {
-    "dev": "webpack-dev-server --watch-poll",
-    "build": "node_modules/.bin/webpack -p --progress --colors",
-    "start": "node src/main/js/index.js --use-strict"
+    "dev": "set REACT_APP_ROUTER_URL=LOCAL & webpack-dev-server --watch-poll",
+    "build": "set REACT_APP_ROUTER_URL=BLD &  webpack -p --progress --colors",
+    "start": "set REACT_APP_ROUTER_URL=CLOUD & node src/main/js/index.js --use-strict",
+    "test": "mocha  js:babel-register --require ./src/test/js/helpers.js ./src/test/ --recursive"
   },
   "keywords": [
-    "react"
+    "react",
+    "PCF"
   ],
   "author": "olga",
   "license": "ISC",
@@ -16,17 +18,29 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
-    "react": "^16.1.0",
+    "chai": "^4.1.2",
+    "enzyme": "^3.2.0",
+    "react": "^16.1.1",
+    "react-addons-test-utils": "^15.6.2",
     "react-bootstrap": "^0.31.5",
     "react-bootstrap-inputs": "0.0.2",
     "react-button": "^1.2.1",
-    "react-dom": "^16.1.0",
+    "react-dom": "^16.1.1",
     "react-input-autosize": "^2.0.1",
     "react-text-input": "0.0.8",
-    "react-textarea-autosize": "^5.2.1"
+    "react-textarea-autosize": "^5.2.1",
+    "sinon": "^4.1.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "enzyme": "^3.2.0",
+    "mocha": "^4.0.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-app-env": "^1.2.0",
+    "sinon": "^4.1.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   }
